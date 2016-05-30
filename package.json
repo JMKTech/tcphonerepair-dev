@@ -1,0 +1,17 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "JMK Tech Home Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "",
+    "sass-server": "node-sass scss/style.scss public/wp-content/themes/jmktechhome/style.css --include-path=node_modules/bootstrap-sass/assets/stylesheets/ -w"
+  },
+  "author": "Kelly Nelson",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "node-sass": "^3.7.0"
+  }
+}
