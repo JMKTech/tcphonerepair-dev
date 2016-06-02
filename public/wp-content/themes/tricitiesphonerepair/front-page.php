@@ -7,23 +7,28 @@
 
 get_header(); ?>
 
-<section id="primary" role="main" class="col pull-left span_8">
+<!-- slogan banner -->
+  <div class="ribbon">
+    <div class="row">
+      <h3 class="slogan">VIP level support for individuals</h3>
+    </div>
+  </div>
 
-<?php while ( have_posts() ) : the_post(); ?>
+  <!-- navbar -->
+  <nav id="navbar-front-page" class="clear-fix">
+    <div id="nav-logo">
+      <a href="http://tricitiesphonerepair.com"><img src="wp-content/themes/tricitiesphonerepair/assets/images/tcppr.png"></a>
+    </div>
+    <!--
+    <ul>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">RATES</a></li>
+      <li><a href="#">HOURS & LOCATION</a></li>
+      <li><a href="#">CAREERS</a></li>
+      <li><a href="#">COMMUNITY</a></li>
+    </ul>
+    -->
+    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+  </nav>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		</header><!-- .entry-header -->
-	
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'tricitiesphonerepair' ) . '</span>', 'after' => '</div>' ) ); ?>
-		</div><!-- .entry-content -->
-	</article><!-- #post-<?php the_ID(); ?> -->
-
-<?php endwhile; // end of the loop. ?>
-
-</section><!-- #primary -->
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

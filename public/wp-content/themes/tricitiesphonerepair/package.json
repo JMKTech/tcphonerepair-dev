@@ -4,6 +4,8 @@
     "url": "https://github.com/zoerooney/Emi"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "node-sass": "^3.7.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

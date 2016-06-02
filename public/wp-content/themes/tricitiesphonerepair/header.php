@@ -26,6 +26,9 @@
     <!-- favicon & links -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <!-- javascript -->
+    <script src="../assets/jquery.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
 
     <!-- stylesheets are enqueued via functions.php -->
 
@@ -39,16 +42,19 @@
 </head>
  
 <body <?php body_class(); ?>>
-	<div id="page">
-		<header id="site-header" role="banner" class="row">            
-			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
-			</a>
 
-			<nav class="access" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #access -->  
-		</header><!-- #branding -->
+  <div id="header">
+  <!-- top fixed header -->
+  <div id="top-header">
+    <div class="container">
+      <ul>
+        <li class="icon-bar"><i class="fa fa-phone-square" aria-hidden="true"></i>509-946-5251</li>
+        <li class="icon-bar"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@jmktech.com</li>
+      </ul>
+    </div>
+  </div>
+
+  
 
 
-		<div id="main" class="row">
+	

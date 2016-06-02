@@ -13,13 +13,16 @@ Text Domain: tricitiesphonerepair
 /* FONTS
 -------------------------- */
 // Uncomment/use this file for self-hosted web fonts
-// @import "fonts/all";
+@import "fonts/all";
+@import "font-awesome/font-awesome";
 
 /* RESET & BASE
 ------------------ */
 @import "reset";
 @import "mixins";
 @import "base";
+@import "bootstrap";
+
 
 /* =LAYOUTS
 ------------------ */
@@ -27,6 +30,7 @@ Text Domain: tricitiesphonerepair
 @import "header";
 @import "nav";
 @import "footer";
+
 
 /* =CONTENT
 ------------------ */
@@ -44,7 +48,7 @@ Text Domain: tricitiesphonerepair
 @import "content";
 @import "pages/all";
 // Uncomment if you have a custom home page
-// @import "pages/home";
+@import "pages/home";
 
 /* =BLOG SPECIFIC
 ------------------ */

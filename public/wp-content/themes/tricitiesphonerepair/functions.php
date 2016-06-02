@@ -89,6 +89,15 @@ function tricitiesphonerepair_scripts() {
 add_action('wp_enqueue_scripts', 'tricitiesphonerepair_scripts');
 
 
+/* MENUS 
+=========================== */
+function register_my_menus() {
+	register_nav_menus(
+		array( 'main-menu' => __( 'Main Menu' ),'footer-menu' => __( 'Footer Menu' ) )
+	);
+}
+add_action( 'init', 'register_my_menus' );
+
 /* MISC EXTRAS
  ========================== */
  

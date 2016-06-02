@@ -40,9 +40,9 @@ hr {
 p {
 	margin-bottom: 1.5em;
 }
-ul, ol {
+/*ul, ol {
 	margin: 0 0 1.5em 2.5em;
-}
+} */
 ul {
 	list-style: square;
 }
@@ -132,6 +132,7 @@ a {
 	text-decoration: none;
 	&:focus,
 	&:active,
+	&:visited,
 	&:hover {
 		color: $hover;
 	}

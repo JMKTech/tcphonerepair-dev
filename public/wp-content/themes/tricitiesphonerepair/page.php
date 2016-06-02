@@ -9,16 +9,26 @@
 
 get_header(); ?>
 
-<section id="primary" role="main" class="col pull-left span_8">
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+<div id="navbar-all">
+	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+</div>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+<div class="container"
+	<section id="primary" role="main" class="col pull-left span_8">
 
-			<?php get_template_part( 'content', 'page' ); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php comments_template( '', true ); ?>
+				<?php get_template_part( 'content', 'page' ); ?>
 
-		<?php endwhile; // end of the loop. ?>
+				<?php comments_template( '', true ); ?>
 
-</section><!-- #primary -->
-<?php get_sidebar(); ?>
+			<?php endwhile; // end of the loop. ?>
+
+	</section><!-- #primary -->
+</div>
+</div>
+</nav>
+
 <?php get_footer(); ?>

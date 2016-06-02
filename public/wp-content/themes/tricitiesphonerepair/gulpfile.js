@@ -11,9 +11,9 @@ var gulp = require('gulp'),
     
 gulp.task('styles', function(){
 	return sass('scss/*.scss') 
-	//	.on('error', function (err) {
-	//		console.error('Error!', err.message);
-	//	})
+		.on('error', function (err) {
+			console.error('Error!', err.message);
+		})
 		.pipe(gulp.dest(''))
 		.pipe(autoprefixer())
 		.pipe(minifycss())
