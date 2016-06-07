@@ -9,10 +9,11 @@ body {
 }
 #main,
 #footer,
-.row {
-	@include clearfix;
-}
 
+/* .row {
+	@include clearfix;
+} */
+/*
 // Grid System
 .container {
 	width: 95%;
@@ -32,6 +33,8 @@ body {
 		margin-left: 0;
 	}
 }
+
+*/
 .span_1 { width: 6.5%; }
 .span_2 { width: 15.0%; }
 .span_3 { width: 23.5%; }

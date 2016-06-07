@@ -9,13 +9,44 @@
 
 get_header(); ?>
 
-<nav class="navbar navbar-default">
+<div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
-<div id="navbar-all">
-	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-</div>
+    	<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+	    </div>
 
-<div class="container"
+		<div class="collapse navbar-collapse navbar-menubuilder">
+			<ul class="nav navbar-nav">
+				<?php wp_nav_menu(array(
+				    //'menu' => 'main_menu'
+				    'theme_location' => 'main_menu',
+				    'container' => false,
+				    'container_class' => 'collapse navbar-collapse',
+				    'container_id' => 'main-navbar-collapse',
+				    'menu_class' => 'nav navbar-nav',
+				    //'menu_id' => '',
+				    //'echo' => true,
+				    'fallback_cb' => 'wp_page_menu',
+				    //'before' => '',
+				    //'after' => '',
+				    //'link_before' => '',
+				    //'link_after' => '',
+				    //'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				    'depth' => 2,
+				    'walker' => new wp_bootstrap_navwalker()
+				)); ?>
+			</ul>
+		</div><!--/.nav-collapse -->
+    </div>
+ </div>
+
+
+<div class="container-fluid main">
 	<section id="primary" role="main" class="col pull-left span_8">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -28,7 +59,5 @@ get_header(); ?>
 
 	</section><!-- #primary -->
 </div>
-</div>
-</nav>
 
 <?php get_footer(); ?>

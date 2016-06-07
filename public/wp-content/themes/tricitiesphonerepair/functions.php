@@ -7,6 +7,8 @@
  * @package tricitiesphonerepair
  */
 
+// Register Bootstrap Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
 
 /* OEMBED SIZING
  ========================== */
@@ -17,7 +19,7 @@ if ( ! isset( $content_width ) )
 	
 /* THEME SETUP
  ========================== */
- 
+
 if ( ! function_exists( 'tricitiesphonerepair_setup' ) ):
 function tricitiesphonerepair_setup() {
 
@@ -28,8 +30,12 @@ function tricitiesphonerepair_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// Add custom nav menu support
-	register_nav_menu( 'primary', __( 'Primary Menu', 'tricitiesphonerepair' ) );
-	
+	//register_nav_menu( 'primary', __( 'Primary Menu', 'tricitiesphonerepair' ) );
+	register_nav_menus( 
+		array(
+		'main_menu' => __( 'Main Menu', 'tricitiesphonerepair' ),
+		) );
+
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
 	
@@ -68,11 +74,20 @@ add_action( 'widgets_init', 'tricitiesphonerepair_widgets_init' );
 function tricitiesphonerepair_scripts() {
 	// theme style.css file
 	wp_enqueue_style( 'tricitiesphonerepair-style', get_stylesheet_uri() );
-	
+	//jquery
+	wp_enqueue_script('jquery');
 	// threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+
 	}
+
+function wpt_register_js() {
+    wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/assets/bootstrap.min.js', 'jquery');
+    wp_enqueue_script('jquery.bootstrap.min');
+}
+
+
 	// vendor scripts
 //	wp_enqueue_script(
 //		'vendor',
@@ -87,16 +102,21 @@ function tricitiesphonerepair_scripts() {
 //	);
 }    
 add_action('wp_enqueue_scripts', 'tricitiesphonerepair_scripts');
+add_action('wp_enqueue_scripts', 'wpt_register_js');
 
 
 /* MENUS 
-=========================== */
+===========================
 function register_my_menus() {
 	register_nav_menus(
 		array( 'main-menu' => __( 'Main Menu' ),'footer-menu' => __( 'Footer Menu' ) )
 	);
 }
 add_action( 'init', 'register_my_menus' );
+
+	register_nav_menus( 
+		array( 'main-menu' => __( 'Main Menu', 'tricitiesphonerepair' ),
+			) ); */
 
 /* MISC EXTRAS
  ========================== */

@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <!-- javascript -->
-    <script src="../assets/jquery.js"></script>
-    <script src="assets/bootstrap.min.js"></script>
+    
+   
 
     <!-- stylesheets are enqueued via functions.php -->
 
@@ -43,14 +43,16 @@
  
 <body <?php body_class(); ?>>
 
-  <div id="header">
-  <!-- top fixed header -->
-  <div id="top-header">
-    <div class="container">
-      <ul>
-        <li class="icon-bar"><i class="fa fa-phone-square" aria-hidden="true"></i>509-946-5251</li>
-        <li class="icon-bar"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@jmktech.com</li>
-      </ul>
+<div id="header">
+<!-- top fixed header -->
+    <div id="top-header">
+      <div class="container">
+        <ul>
+          <li class="icon-bar"><img src="wp-content/themes/tricitiesphonerepair/assets/images/tcppr.png">
+          <li class="icon-bar"><i class="fa fa-phone-square" aria-hidden="true"></i>509-946-5251</li>
+          <li class="icon-bar"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@jmktech.com</li>
+        </ul>
+      </div>
     </div>
   </div>
 
