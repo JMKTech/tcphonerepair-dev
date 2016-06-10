@@ -9,6 +9,10 @@
 
 get_header(); ?>
 
+<div id="pages-logo">
+	<a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
+</div>
+
 <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
     	<div class="navbar-header">
@@ -19,7 +23,6 @@ get_header(); ?>
 				<span class="icon-bar"></span>
 			</button>
 	    </div>
-
 		<div class="collapse navbar-collapse navbar-menubuilder">
 			<ul class="nav navbar-nav">
 				<?php wp_nav_menu(array(
@@ -41,9 +44,9 @@ get_header(); ?>
 				    'walker' => new wp_bootstrap_navwalker()
 				)); ?>
 			</ul>
-		</div><!--/.nav-collapse -->
+		</div>
     </div>
- </div>
+ </div> 
 
 
 <div class="container-fluid main">

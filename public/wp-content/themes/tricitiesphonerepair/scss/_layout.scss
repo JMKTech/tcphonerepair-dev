@@ -8,13 +8,13 @@ body {
 	padding: 0 15px;
 }
 #main,
-#footer,
+/* #footer, */
 
-/* .row {
+.row {
 	@include clearfix;
-} */
+}
 /*
-// Grid System
+// Grid System */
 .container {
 	width: 95%;
 	max-width: $max-width;
@@ -34,7 +34,7 @@ body {
 	}
 }
 
-*/
+
 .span_1 { width: 6.5%; }
 .span_2 { width: 15.0%; }
 .span_3 { width: 23.5%; }

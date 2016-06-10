@@ -1,3 +1,27 @@
+#mainfooter {
+	margin-top: 50px;
+	margin-left: 10px;
+}
 #copyright {
 	font-size: 10px;
+}
+
+@media (max-width: $screen-xs-max) {
+	#sticky-social-footer {
+		position: absolute;
+		background-color: gray;
+		height: 40px;
+		width: 100%;
+		bottom: 0px;
+	}
+
+	.social-media {
+		font-size: 20px;
+		margin-top: 0px;
+		text-align: center;
+
+		i {
+			padding: 10px;
+		}
+	}
 }

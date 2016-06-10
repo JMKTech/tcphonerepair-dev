@@ -20,15 +20,12 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!-- title -->
     <title><?php wp_title( '|', true, 'right' ); ?></title>
-    
     <!-- favicon & links -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <!-- javascript -->
-    
-   
 
     <!-- stylesheets are enqueued via functions.php -->
 
@@ -44,17 +41,26 @@
 <body <?php body_class(); ?>>
 
 <div id="header">
-<!-- top fixed header -->
-    <div id="top-header">
-      <div class="container">
-        <ul>
-          <li class="icon-bar"><img src="wp-content/themes/tricitiesphonerepair/assets/images/tcppr.png">
-          <li class="icon-bar"><i class="fa fa-phone-square" aria-hidden="true"></i>509-946-5251</li>
-          <li class="icon-bar"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@jmktech.com</li>
+  <!-- top fixed header -->
+  <div  id="top-header" class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6">
+        <a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
+        <ul class="social-media">
+          <li class="icon-bar"><a href="https://www.facebook.com/jmktechhomeservices" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="https://www.instagram.com/jmktech" target="bobdole"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="https://twitter.com/JMKTechHome" target="bobdole"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>  
+      <div class="col-xs-6">
+        <ul class="contact-info">
+         <li class="icon-bar phone"><button class="btn btn-default btn-header" href="tel:509-946-5251"><i class="fa fa-phone-square" aria-hidden="true"></i>509-946-5251</a></li>
+          <li class="icon-bar email"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@jmktech.com</li>
         </ul>
       </div>
     </div>
   </div>
+</div>
 
   
 

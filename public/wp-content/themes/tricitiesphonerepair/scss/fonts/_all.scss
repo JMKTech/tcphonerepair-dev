@@ -4,3 +4,9 @@
  * I recommend putting your files in /assets/fonts/
  *
  * -------------------------------- */
+
+@font-face {
+  font-family: 'Trump';
+  src:  url('assets/fonts/trumpgothicpro-regular-webfont.woff2') format('woff2'),
+        url('assets/fonts/trumpgothicpro-regular-webfont.woff') format('woff');
+}
