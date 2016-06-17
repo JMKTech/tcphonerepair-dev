@@ -7,13 +7,14 @@ body, input, textarea {
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
+	font-family: 'Trump';
 	clear: both;
 }
 h1 {
 	
 }
 h2 {
-	
+	font-size: 48px;
 }
 h3 {
 	
@@ -132,7 +133,9 @@ a {
 	text-decoration: none;
 	&:focus,
 	&:active,
-	&:visited,
+	&:visited {
+		color: $links;
+	}
 	&:hover {
 		color: $hover;
 	}

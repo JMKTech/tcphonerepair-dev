@@ -23,28 +23,20 @@ li {
 			padding-right: 20px;
 		}
 	}
+}
 
-	.social-media {
-		font-size: 26px;
-		margin-top: 5px;
-	}
+.social-media {
+	font-size: 26px;
+	margin-top: 5px;
+}
 
-	img {
-		display: none;
-	}
+.small-white-logo img {
+	display: none;
+}
 
-	i {
-		padding-right: 7px;
-		font-size: 1em;
-	}
-
-	a {
-		color: white;
-	}
-
-	a:hover, a:focus {
-		color: $hover;
-		}
+i {
+	padding-right: 7px;
+	font-size: 1em;
 }
 
 .icon-bar {
@@ -56,7 +48,7 @@ li {
   height: 50px;
   width: 100%;
   top: 0;
-  background-color: gray;
+  background-color: $text;
   z-index: 1; }
 
 .btn-header {
@@ -67,6 +59,11 @@ li {
 	background: transparent;
 	color: white;
 	border: 0px;
+}
+
+.btn:hover {
+	background: $hover;
+	color: $links;
 }
 
 @media (max-width: $screen-xs-max)  {

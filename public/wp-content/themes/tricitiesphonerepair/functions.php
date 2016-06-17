@@ -34,6 +34,7 @@ function tricitiesphonerepair_setup() {
 	register_nav_menus( 
 		array(
 		'main_menu' => __( 'Main Menu', 'tricitiesphonerepair' ),
+		'footer_menu' => __( 'Footer Menu', 'tricitiesphonerepair' ),
 		) );
 
 	// Add featured image support
@@ -87,7 +88,6 @@ function wpt_register_js() {
     wp_enqueue_script('jquery.bootstrap.min');
 }
 
-
 	// vendor scripts
 //	wp_enqueue_script(
 //		'vendor',
@@ -95,12 +95,9 @@ function wpt_register_js() {
 //		array('jquery')
 //	);
 	// theme scripts
-//	wp_enqueue_script(
-//		'theme-init',
-//		get_template_directory_uri() . '/assets/theme.js',
-//		array('jquery')
-//	);
+	wp_enqueue_script('theme-init', get_template_directory_uri() . '/assets/theme.js', 'jquery');
 }    
+
 add_action('wp_enqueue_scripts', 'tricitiesphonerepair_scripts');
 add_action('wp_enqueue_scripts', 'wpt_register_js');
 

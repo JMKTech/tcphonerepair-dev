@@ -1,50 +1,20 @@
-/* #navbar-front-page {
-	font-family: 'Trump';
-	letter-spacing: 2px;
-	background: rgba(239, 129, 34, 1.0);
-	height: 40px;
-	top: 305px;
-	position: relative;  
 
-	ul {
-		padding-top: 0px;
-		padding-bottom: 0px;
-		text-align: center;
-	}
-
-	li {
-  		display: inline;
-
-
-		  a {
-		  	color: white;
-		  	padding: 10px;
-		    text-transform: uppercase;
-		    font-weight: bolder;
-		    text-decoration: none;
-		  }
-
-		  a:hover, a:focus {
-		  	color: $hover;
-		  }
-	}
-}
-*/
 #nav-logo {
 	position: absolute;
 	width: 200px;
 	left: 30px;
-	top: 70px;
+	top: 85px;
 
 }
 
 /* navbar */
 
 #custom-bootstrap-menu {
-	margin-top: 50px;
 	font-family: 'Trump';
 	letter-spacing: 2px;
+	width: 100%;
 }
+
 #custom-bootstrap-menu.navbar {
 	ul {
 		padding-top: 3px;
@@ -78,7 +48,7 @@
     max-height: 40px;
     padding-top: 3px;
     padding-bottom: 3px;
-    color: white;
+    color: $links;
     background-color: none;
     font-size: 1.8em;
 }
@@ -94,13 +64,13 @@
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(51, 51, 51, 1);
+    color: $hover;
     background-color: none;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(85, 85, 85, 1);
+    color: $hover;
     text-decoration: underline;
     background-color: transparent;
     z-index: 100;
@@ -132,11 +102,19 @@
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #124d91;
+    background-color: $hover;
 }
 
 .front-page-nav {
 	top: 285px;
+	margin-top: 50px;
+}
+
+.front-page-nav-fixed-top {
+	position: fixed;
+	top: 50px;
+	z-index: 100;
+	margin-top: 0px;
 }
 
 @media (min-width: 768px) {
@@ -154,7 +132,7 @@
 
 @media (max-width: $screen-xs-max) {
 	.front-page-nav {
-		top: -40px;
+		top: -75px;
 	}
 	/* #navbar-front-page {
 		height: 40px;

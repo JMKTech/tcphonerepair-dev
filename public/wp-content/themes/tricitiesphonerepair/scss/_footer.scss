@@ -1,21 +1,44 @@
 #mainfooter {
 	margin-top: 50px;
-	margin-left: 10px;
+	min-height: 100px;
+	background: $text;
 }
+
 #copyright {
+	color: $links;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.copyright-text {
+	padding: 10px;
 	font-size: 10px;
+	font-weight: lighter;
+}
+
+.address-text {
+	text-align: right;
+	padding: 10px;
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+.social-media-invisible {
+	display: none;
 }
 
 @media (max-width: $screen-xs-max) {
 	#sticky-social-footer {
-		position: absolute;
-		background-color: gray;
+		position: fixed;
+		background-color: $highlight;
 		height: 40px;
 		width: 100%;
 		bottom: 0px;
+		z-index: 5;
 	}
 
 	.social-media {
+		display: block;
 		font-size: 20px;
 		margin-top: 0px;
 		text-align: center;
@@ -23,5 +46,7 @@
 		i {
 			padding: 10px;
 		}
+
+
 	}
 }

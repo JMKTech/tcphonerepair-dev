@@ -44,7 +44,7 @@
   <!-- top fixed header -->
   <div  id="top-header" class="container-fluid">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-6 small-white-logo">
         <a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
         <ul class="social-media">
           <li class="icon-bar"><a href="https://www.facebook.com/jmktechhomeservices" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
