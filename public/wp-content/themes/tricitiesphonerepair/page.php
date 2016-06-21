@@ -13,7 +13,7 @@ get_header(); ?>
 	<a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
 </div>
 
-<div id="custom-bootstrap-menu" class="navbar navbar-default front-page-nav-fixed-top" role="navigation">
+<div id="custom-bootstrap-menu" class="navbar navbar-default all-page-nav-fixed-top front-page-nav-fixed-top" role="navigation">
 	<div class="container-fluid">
     	<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">

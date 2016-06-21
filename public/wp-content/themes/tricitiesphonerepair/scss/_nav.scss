@@ -117,6 +117,13 @@
 	margin-top: 0px;
 }
 
+.all-page-nav-fixed-top {
+	position: fixed;
+	top: 50px;
+	z-index: 100;
+	margin-top: 0;
+}
+
 @media (min-width: 768px) {
   	.navbar-nav {
     	float:none;

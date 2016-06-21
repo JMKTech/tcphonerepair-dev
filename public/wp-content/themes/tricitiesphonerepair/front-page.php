@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="container-fluid">
   <div class="row">
     <!-- hero - _all.scss -->
-    <div id="hero">
+    <section class="hero">
       <!-- slogan banner - _all.scss -->
       <div class="ribbon">
           <h3 class="slogan">Tri-Cities premier cell phone repair shop</h3>
@@ -55,11 +55,11 @@ get_header(); ?>
           </div>
         </div>
       </div> 
-    </div>
+    </section>
   </div> <!-- row -->
 </div>
 <!-- Content Row 1 -->
-<div id="front-page-content" class="container">
+<section id="front-page-content" class="container">
   <div class="row">
     <div class="col-md-6 category">
       <div class="category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
@@ -80,7 +80,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- Manufacturer Row -->
 <div id="device-list-wrapper" class="container-fluid">
   <div class="row">

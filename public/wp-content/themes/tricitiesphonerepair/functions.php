@@ -96,7 +96,9 @@ function wpt_register_js() {
 //	);
 	// theme scripts
 	wp_enqueue_script('theme-init', get_template_directory_uri() . '/assets/theme.js', 'jquery');
-}    
+}   
+   
+
 
 add_action('wp_enqueue_scripts', 'tricitiesphonerepair_scripts');
 add_action('wp_enqueue_scripts', 'wpt_register_js');

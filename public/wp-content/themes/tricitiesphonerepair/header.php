@@ -52,9 +52,10 @@
           <li class="icon-bar"><a href="https://twitter.com/JMKTechHome" target="bobdole"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </div>  
+
       <div class="col-xs-6">
         <ul class="contact-info">
-         <li class="icon-bar phone"><button class="btn btn-default btn-header" href="tel:509-946-5251"><i class="fa fa-phone-square" aria-hidden="true"></i>509-946-5251</a></li>
+         <li class="icon-bar phone"><button class="btn btn-default btn-header" href="tel:509-392-1881"><i class="fa fa-phone-square" aria-hidden="true"></i>509-392-1881</a></li>
           <li class="icon-bar email"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@jmktech.com</li>
         </ul>
       </div>

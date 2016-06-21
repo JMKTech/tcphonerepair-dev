@@ -45,25 +45,27 @@ i {
 
 #header {
   position: fixed;
-  height: 50px;
+
   width: 100%;
   top: 0;
   background-color: $text;
-  z-index: 1; }
+  z-index: 3; }
 
 .btn-header {
 	padding: 5px;
 }
 
 .btn-default {
-	background: transparent;
+	background: $hover;
 	color: white;
 	border: 0px;
+	border: 1px solid rgba(255,255,255,0.0);
 }
 
 .btn:hover {
 	background: $hover;
 	color: $links;
+	border: 1px solid white;
 }
 
 @media (max-width: $screen-xs-max)  {

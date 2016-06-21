@@ -16,7 +16,7 @@
 			<a href="http://pnwnelson.com" target="_blank" rel="nofollow">PNW Nelson</a> --> </p>
 		</div>
 		<div class="col-xs-6">
-			<p class="address-text">710 George Washington Way Ste B-B Richland, WA 99353</p>	
+			<p class="address-text">710 George Washington Way Ste A-A Richland, WA 99353</p>	
 		</div>
 	</div>
 </footer><!-- #colophon -->
