@@ -86,7 +86,14 @@ function tricitiesphonerepair_scripts() {
 function wpt_register_js() {
     wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/assets/bootstrap.min.js', 'jquery');
     wp_enqueue_script('jquery.bootstrap.min');
+    wp_enqueue_script( 'wow', get_template_directory_uri() .  '/assets/wow.min.js', array( 'jquery' ), true );
+    wp_enqueue_style( 'animate', get_stylesheet_directory_uri() . '/assets/animate.css' );
 }
+
+
+
+		
+
 
 	// vendor scripts
 //	wp_enqueue_script(

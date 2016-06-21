@@ -15,13 +15,13 @@
  });
 
 // Background Scrolling Parallex
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
 
-var top_header = $('.hero');
-top_header.css({'background-position':'center center'}); // better use CSS
+  var top_header = $('.hero');
+  top_header.css({'background-position':'center center'}); // better use CSS
 
-$(window).scroll(function () {
-var st = $(this).scrollTop();
-top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
-});
+  $(window).scroll(function () {
+  var st = $(this).scrollTop();
+  top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
+  });
 });

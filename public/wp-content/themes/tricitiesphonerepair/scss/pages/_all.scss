@@ -9,11 +9,17 @@
 }
 
 .hero {
+  width: 100%;
   background: url("assets/images/hero-1.jpg");
-
-  height: 447px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;   
   background-size: cover;
-  position: relative; }
+  height: 447px;
+  position: relative; 
+  background-clip: border-box;
+}
 
 .slogan {
   margin: 15px; }
