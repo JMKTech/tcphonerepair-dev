@@ -47,9 +47,9 @@
       <div class="col-xs-6 small-white-logo">
         <a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
         <ul class="social-media">
-          <li class="icon-bar"><a href="https://www.facebook.com/jmktechhomeservices" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-          <li class="icon-bar"><a href="https://www.instagram.com/jmktech" target="bobdole"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li class="icon-bar"><a href="https://twitter.com/JMKTechHome" target="bobdole"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="https://www.facebook.com/Tricitiesphonerepair/" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="http://www.yelp.com/biz/tri-cities-phone-repair-richland?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="bobdole"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="https://plus.google.com/+Tricitiesphonerepair" target="bobdole"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
         </ul>
       </div>  
 

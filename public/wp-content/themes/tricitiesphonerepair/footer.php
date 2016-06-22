@@ -26,9 +26,9 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="social-media social-media-invisible">
-			      <li class="icon-bar"><a href="https://www.facebook.com/jmktechhomeservices" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-			      <li class="icon-bar"><a href="https://www.instagram.com/jmktech" target="bobdole"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			      <li class="icon-bar"><a href="https://twitter.com/JMKTechHome" target="bobdole"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			      <li class="icon-bar"><a href="https://www.facebook.com/Tricitiesphonerepair/" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="http://www.yelp.com/biz/tri-cities-phone-repair-richland?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="bobdole"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="https://plus.google.com/+Tricitiesphonerepair" target="bobdole"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
 			    </ul>
 		    </div>
 	    </div>
