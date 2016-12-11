@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div id="pages-logo">
-	<a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
+	<a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-new-v1-white.png"></a>
 </div>
 
 <div id="custom-bootstrap-menu" class="navbar navbar-default all-page-nav-fixed-top front-page-nav-fixed-top" role="navigation">
@@ -52,13 +52,18 @@ get_header(); ?>
 <div class="container-fluid main">
 	<section id="primary" role="main" class="col pull-left">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post();
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				get_template_part( 'content', 'page' );
 
-				<?php comments_template( '', true ); ?>
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 
-			<?php endwhile; // end of the loop. ?>
+			endwhile; // end of the loop. 
+
+			posts_nav_link() ?>
 
 	</section><!-- #primary -->
 </div>

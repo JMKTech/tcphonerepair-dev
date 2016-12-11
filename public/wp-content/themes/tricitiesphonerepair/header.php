@@ -33,7 +33,7 @@
     <!--[if lt IE 9]>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
-
+  
     <?php // Lets other plugins and files tie into our theme's <head>:
     wp_head(); ?>
 </head>
@@ -45,9 +45,9 @@
   <div  id="top-header" class="container-fluid">
     <div class="row">
       <div class="col-xs-6 small-white-logo">
-        <a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-logo-white.png"></a>
+        <a href="../index.php"><img src="../wp-content/themes/tricitiesphonerepair/assets/images/tcppr-new-v1-white.png"></a>
         <ul class="social-media">
-          <li class="icon-bar"><a href="https://www.facebook.com/Tricitiesphonerepair/" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="icon-bar"><a href="https://www.facebook.com/tricitiesphonerepair/" target="bobdole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
           <li class="icon-bar"><a href="http://www.yelp.com/biz/tri-cities-phone-repair-richland?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="bobdole"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
           <li class="icon-bar"><a href="https://plus.google.com/+Tricitiesphonerepair" target="bobdole"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
         </ul>
@@ -55,7 +55,7 @@
 
       <div class="col-xs-6">
         <ul class="contact-info">
-         <li class="icon-bar phone"><button class="btn btn-default btn-header" href="tel:509-392-1881"><i class="fa fa-phone-square" aria-hidden="true"></i>509-392-1881</a></li>
+         <li class="icon-bar phone"><a class="btn btn-default btn-header" href="tel:509-392-1881"><i class="fa fa-phone-square" aria-hidden="true"></i>509-392-1881</a></li>
           <li class="icon-bar email"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@tcphonerepair.com</li>
         </ul>
       </div>
@@ -63,7 +63,7 @@
   </div>
 </div>
 
-  
+
 
 
 	

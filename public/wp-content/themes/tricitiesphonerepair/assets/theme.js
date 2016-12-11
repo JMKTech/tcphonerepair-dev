@@ -25,3 +25,15 @@ jQuery(document).ready(function($){
   top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
   });
 });
+
+// Background Scrolling Parallex
+jQuery(document).ready(function($){
+
+  var top_header = $('.hero-2');
+  top_header.css({'background-position':'center center'}); // better use CSS
+
+  $(window).scroll(function () {
+  var st = $(this).scrollTop();
+  top_header.css({'background-position':'center calc(50% + '+(st*.25)+'px)'});
+  });
+});

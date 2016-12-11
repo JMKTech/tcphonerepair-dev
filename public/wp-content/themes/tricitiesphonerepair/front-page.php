@@ -14,11 +14,11 @@ get_header(); ?>
       <!-- slogan banner - _all.scss -->
       <div class="ribbon">
           <h3 class="slogan">Tri-Cities premier cell phone repair shop</h3>
-          <h4>...and computer repair too!</h4>
+          <!-- <h4>...and computer repair too!</h4> -->
       </div>
       <!-- logo -->
       <div id="nav-logo">
-          <a href="../index.php"><img src="wp-content/themes/tricitiesphonerepair/assets/images/tcppr.png"></a>
+          <a href="../index.php"><img src="wp-content/themes/tricitiesphonerepair/assets/images/tcppr-new-v1.png"></a>
       </div>
       <!-- navbar -->
       <div id="custom-bootstrap-menu" class="navbar navbar-default front-page-nav" role="navigation">
@@ -64,23 +64,33 @@ get_header(); ?>
     <div class="col-md-6 category">
       <div class="category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
       <div class="row category-title">
-        <h2>Phone & Tablet Repair</h2>
+        <h2>Phone Repair</h2>
       </div>
       <div class="row category-desc">
-        <p>Cracked screen to water damage. We save you money by saving your smart phone or tablet. We stock new screens for select iPhones, iPads and Android devices for a quick turn around. Our professionals are standing by to rescue your device! Come in today!</p>
+        <p>Cracked screen to water damage. We save you money by saving your smart phone. We stock new screens for select iPhones and Android devices for a quick turn around. Our professionals are standing by to rescue your device! Come in today!</p>
       </div>
     </div>
     <div class="col-md-6 category">
-      <div class="category-icon"><i class="fa fa-laptop" aria-hidden="true"></i></div>
+      <div class="category-icon"><i class="fa fa-tablet" aria-hidden="true"></i></div>
       <div class="row category-title">
-        <h2>Computer Repair</h2>
+        <h2>Tablet Repair</h2>
+        <!-- <h2>Computer Repair</h2> -->
       </div>
       <div class="row category-desc">
-        <p>We provide expert hardware and software repair services for laptops and desktops. We also provide routine maintenance to help prevent unexpected downtime. Don't need a repair, just a little help with an upgrade or data transfer to a new computer? We do that too! Call us, or come in today!</p>
+        <p>From charging ports to battery replacements to cracked screens, we can take care of your damaged tablet. Once parts arrive, our expert technicians can handle virtually any tablet repair. We also carry a few charging cables in stock!</p>
+        <!-- <p>We provide expert hardware and software repair services for laptops and desktops. We also provide routine maintenance to help prevent unexpected downtime. Don't need a repair, just a little help with an upgrade or data transfer to a new computer? We do that too! Call us, or come in today!</p> -->
       </div>
     </div>
   </div>
 </section>
+<section class="hero-2 container"></section>
+<div class="container">
+  <div class="row">
+    <div class="ribbon-2">
+          <h3 class="slogan-2">Cracked screens can be replaced within 2 hours, if we have that screen in stock!</h3>
+    </div>
+  </div>
+</div>
 <!-- Manufacturer Row -->
 <div id="device-list-wrapper" class="container-fluid">
   <div class="row">
@@ -92,6 +102,9 @@ get_header(); ?>
     </ul>
   </div>
 </div>
+
+
+
 
 
 <?php get_footer(); ?>
